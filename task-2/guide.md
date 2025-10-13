@@ -13,3 +13,26 @@
 - And add:
     - Variable name: `ISAACSIM_PYTHON_EXE`
     - Variable value: `C:\Users\<USER>\isaacsim\isaac-sim-standalone-4.5.0-windows-x86_64\python.bat`
+- [Install Miniconda in Windows](https://www.anaconda.com/docs/getting-started/miniconda/install#windows-powershell)
+- Run the following commands in Conda Powershell terminal in \IsaacLab dir:
+```powershell
+# Make Conda env
+conda create -n env_isaaclab python=3.10
+conda activate env_isaaclab
+
+# Update pip
+python -m pip install --upgrade pip
+
+# Install CUDA PyTorch for CUDA 12.8
+pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
+
+# Install IsaacLab via pip
+pip install isaaclab[isaacsim,all]==2.1.0 --extra-index-url https://pypi.nvidia.com
+
+# Test
+isaacsim --help
+
+# Launch Sample
+isaacsim isaacsim.exp.full.kit
+
+
