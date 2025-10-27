@@ -1,11 +1,16 @@
+# How to simulate
 
+## Launching IsaacSim
+```bash
+./run_go2_sim.sh
+```
 
-bash```ros2 launch navigation_runner rviz.launch.py```
-from ~ w/ NavRL env
+## Launching ros2 navigation_runner in rviz
+```bash
+./run_ros2_navigation.sh
+```
 
-
-python isaac_go2_ros2.py
-from ~/isaac-go2-ros2 w/ env_isaaclab
-
+## Launching standalone rviz
+```bash
 rviz2
-from ~/ros2_ws w/ base env
+```
