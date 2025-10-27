@@ -1,9 +1,9 @@
 # Unitree-Go2-Automated-Home-Inspector
 
+## Our Simulation Environment
+**[Remote Simulation Guide](./remote/guide.md)** \
+Contains scripts to run Isaacsim, RViz, and ROS2 on our workstation in E 402B \
+Write your code in this repository to complete tasks
 
-## Task 1: Basic movement
+## Task 1: Basic robot movement
 **[Task 1 Guide](./task-1/guide.md)**
-
-## Task 2: Simulation test
-Installing Isaac Sim, Isaac Lab, and ROS 2 on Windows: \
-**[Task 2 Guide](./task-2/guide.md)**
