@@ -43,7 +43,7 @@ text line (for logs): coverage=.. free=.. occ=..
 ```
 conda activate env_isaaclab
 cd ~/isaac-go2-ros2-isaacsim-4.5
-python isaac-go2-ros2.py
+python isaac_go2_ros2.py
 ```
 
 ## 2. Start Rviz perception module
