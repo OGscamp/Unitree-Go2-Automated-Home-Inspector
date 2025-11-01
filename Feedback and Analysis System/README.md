@@ -27,8 +27,9 @@ occupied% = occ / total * 100 \
 unknown% = 100 − coverage \
 
 # What we publish
-
+```
 text line (for logs): coverage=.. free=.. occ=.. cells=.. \
+```
 
 # Run the Feedback Module steps
 
