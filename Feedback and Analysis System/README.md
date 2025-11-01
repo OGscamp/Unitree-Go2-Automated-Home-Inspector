@@ -54,12 +54,14 @@ ros2 launch navigation_runner perception.launch.py
 ```
 ### In terminal Three
 ```
+conda activate env_isaaclab
 ros2 launch navigation_runner rviz.launch.py
 ```
 
 ## 3. Start map feedback module
 ### In terminal Four
 ```
+conda activate NavRL
 cd ~/isaac-go2-ros2-isaacsim-4.5
 source install/setup.bash
 python3 -m map_feedback.map_feedback_node --ros-args -r /map:=/occupancy_map/occupancy_map_2D
