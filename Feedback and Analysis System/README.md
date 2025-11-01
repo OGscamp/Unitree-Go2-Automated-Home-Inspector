@@ -6,7 +6,7 @@ Optionally integrate interactive feedback—like highlighting unscanned areas or
 
 This module listens to the robot’s 2D map and turns it into simple metrics.
 
-## How values are interpreted in Rviz
+## How values of cells are interpreted in Rviz
 ```
 -1 → unknown (not scanned yet) \
 0 → free (traversable) \ 
@@ -18,21 +18,23 @@ This module listens to the robot’s 2D map and turns it into simple metrics.
 total = all cells in the grid \
 known = cells that are not -1 \
 free = cells that are 0 \
-occ = cells that are > 0 \
+occ (occupied) = cells that are > 0 \
 ```
 
 ## What we compute
 ```
-coverage = known / total * 100 \
-free% = free / total * 100 \
-occupied% = occ / total * 100 \
-unknown% = 100 − coverage \
+coverage % = known / total * 100 \
+free % = free / total * 100 \
+occupied % = occ / total * 100 \
 ```
 
 ## What we publish
 ```
-text line (for logs): coverage=.. free=.. occ=.. cells=.. \
+text line (for logs): coverage=.. free=.. occ=..\
 ```
+coverage is the percentage of the map that the robot has observed (cells that are not -1), whether free or occupied \
+free is the percentage of the map that is observed and empty/traversable (cells that are 0) \
+occ (occupied) is the percentage of the map that is observed and not free (cells that are 1–100), i.e. objects, walls, or obstacles \
 
 # Run the Feedback Module steps
 
