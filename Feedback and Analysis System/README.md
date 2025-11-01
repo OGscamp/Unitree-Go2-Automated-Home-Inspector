@@ -1,8 +1,8 @@
 # Feedback and Analysis System
 
 Develop a feedback module that evaluates the scanned map (e.g., coverage, accuracy, or completeness). \
-Display results or metrics in RViz2 or log them for further analysis. \
-Optionally integrate interactive feedback—like highlighting unscanned areas or suggesting re-exploration paths.
+Display results or metrics in RViz2 or log them for further analysis. ✔️\
+Optionally integrate interactive feedback—like highlighting unscanned areas or suggesting re-exploration paths. ⏳\
 
 This module listens to the robot’s 2D map and turns it into simple metrics.
 
