@@ -6,14 +6,14 @@ Optionally integrate interactive feedback—like highlighting unscanned areas or
 
 This module listens to the robot’s 2D map and turns it into simple metrics.
 
-# How values are interpreted in Rviz
+## How values are interpreted in Rviz
 ```
 -1 → unknown (not scanned yet) \
 0 → free (traversable) \ 
 1..100 → occupied (obstacle) \
 ```
 
-# What we count
+## What we count
 ```
 total = all cells in the grid \
 known = cells that are not -1 \
@@ -21,7 +21,7 @@ free = cells that are 0 \
 occ = cells that are > 0 \
 ```
 
-# What we compute
+## What we compute
 ```
 coverage = known / total * 100 \
 free% = free / total * 100 \
@@ -29,34 +29,34 @@ occupied% = occ / total * 100 \
 unknown% = 100 − coverage \
 ```
 
-# What we publish
+## What we publish
 ```
 text line (for logs): coverage=.. free=.. occ=.. cells=.. \
 ```
 
 # Run the Feedback Module steps
 
-# 1. Start the isaac simulation
-## In terminal One
+## 1. Start the isaac simulation
+### In terminal One
 ```
 conda activate env_isaaclab \
 cd ~/isaac-go2-ros2-isaacsim-4.5 \
 python isaac-go2-ros2.py \
 ```
 
-# 2. Start Rviz perception module
-## In terminal Two
+## 2. Start Rviz perception module
+### In terminal Two
 ```
 conda activate env_isaaclab \
 ros2 launch navigation_runner perception.launch.py \
 ```
-## In terminal Three
+### In terminal Three
 ```
 ros2 launch navigation_runner rviz.launch.py \
 ```
 
-# 3. Start map feedback module
-## In terminal Four
+## 3. Start map feedback module
+### In terminal Four
 ```
 cd ~/isaac-go2-ros2-isaacsim-4.5 \
 source install/setup.bash \
