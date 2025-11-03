@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>map_feedback</name>
+  <version>0.0.1</version>
+  <description>Map evaluation and visualization for Isaac Go2 sim</description>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+
+  <export>
+  </export>
+</package>
