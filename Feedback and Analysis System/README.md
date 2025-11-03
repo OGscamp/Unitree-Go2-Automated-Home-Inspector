@@ -29,7 +29,7 @@ occupied % = occ / total * 100
 ```
 coverage is the percentage of the map that the robot has observed (cells that are not -1), whether free or occupied \
 free is the percentage of the map that is observed and empty/traversable (cells that are 0) \
-occ (occupied) is the percentage of the map that is observed and not free (cells that are 1–100), i.e. objects, walls, or obstacles \
+occ (occupied) is the percentage of the map that is observed and not free (cells that are 1–100), i.e. objects, walls, or obstacles 
 
 ## What we publish
 ```
