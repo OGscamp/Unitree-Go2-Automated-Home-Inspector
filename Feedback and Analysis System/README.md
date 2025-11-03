@@ -66,3 +66,6 @@ cd ~/isaac-go2-ros2-isaacsim-4.5
 source install/setup.bash
 python3 -m map_feedback.map_feedback_node --ros-args -r /map:=/occupancy_map/occupancy_map_2D
 ```
+
+## Sample
+https://github.com/user-attachments/assets/bb477875-ca88-45f3-ad2a-4b15b0294934
