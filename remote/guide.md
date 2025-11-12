@@ -1,16 +1,10 @@
 # How to simulate
 
-## Launching IsaacSim
-```bash
-./run_go2_sim.sh
-```
+Run scripts in order in new terminals
 
-## Launching ros2 navigation_runner in rviz
 ```bash
-./run_ros2_navigation.sh
-```
-
-## Launching standalone rviz
-```bash
-rviz2
+./1-run-sim.sh
+./2-run-perception.sh
+./3-run-rviz.sh
+./4-run-navigation.sh
 ```

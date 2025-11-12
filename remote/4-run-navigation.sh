@@ -6,4 +6,4 @@ source ~/anaconda3/etc/profile.d/conda.sh
 cd /home/m2m/
 conda activate NavRL
 
-ros2 launch navigation_runner rviz.launch.py
+ros2 launch navigation_runner navigation.launch.py
