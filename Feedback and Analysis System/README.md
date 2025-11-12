@@ -29,7 +29,7 @@ occupied % = occ / total * 100
 ```
 coverage is the percentage of the map that the robot has observed (cells that are not -1), whether free or occupied \
 free is the percentage of the map that is observed and empty/traversable (cells that are 0) \
-occ (occupied) is the percentage of the map that is observed and not free (cells that are 1–100), i.e. objects, walls, or obstacles \
+occ (occupied) is the percentage of the map that is observed and not free (cells that are 1–100), i.e. objects, walls, or obstacles 
 
 ## What we publish
 ```
@@ -66,3 +66,6 @@ cd ~/isaac-go2-ros2-isaacsim-4.5
 source install/setup.bash
 python3 -m map_feedback.map_feedback_node --ros-args -r /map:=/occupancy_map/occupancy_map_2D
 ```
+
+## Sample
+https://github.com/user-attachments/assets/bb477875-ca88-45f3-ad2a-4b15b0294934
